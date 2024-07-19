@@ -1,4 +1,7 @@
 ﻿using OOP04.interfaces;
+using OOP04.Questio01;
+using OOP04.Question02;
+using OOP04.Question03;
 using System.Text;
 
 namespace OOP04
@@ -65,14 +68,69 @@ namespace OOP04
             //Question 7: In C#, can an interface have explicit access modifiers for its members?
             //Answer: b) No, all members are implicitly public
 
-             //Question 8: What is the purpose of an explicit interface implementation in C#?
-             //Answer: a) To hide the interface members from outside access
+            //Question 8: What is the purpose of an explicit interface implementation in C#?
+            //Answer: a) To hide the interface members from outside access
 
-             //Question 9: In C#, can an interface have a constructor?
-             //Answer: b) No, interfaces cannot have constructors
+            //Question 9: In C#, can an interface have a constructor?
+            //Answer: b) No, interfaces cannot have constructors
 
-             //Question 10: How can a C# class implement multiple interfaces?
-             //Answer: c) By separating interface names with commas
+            //Question 10: How can a C# class implement multiple interfaces?
+            //Answer: c) By separating interface names with commas
+            #endregion
+
+            #region part3
+            #region Q01
+            //Circle circle = new Circle() { Radius = 10 };
+            //Rectangle rectangle = new Rectangle() 
+            //{ 
+            //    Length = 10 ,
+            //    Width = 10 
+            //};
+            //circle.DisplayShapeInfo();
+            //rectangle.DisplayShapeInfo();
+            #endregion
+            #region Q02
+            //int size;
+            //int[] pass;
+            //string[] name;
+            //string[] role;
+            //do
+            //{
+            //    Console.WriteLine("enter the size : ");
+            //}
+            //while (!int.TryParse(Console.ReadLine(), out  size)&& size<=0);
+            //pass = new int[size];
+            //name = new string[size];
+            //role = new string[size];
+            //for (int i = 0; i < size; i++)
+            //{
+            //    Console.Write("enter the user name : ");
+            //    name[i] = Console.ReadLine();
+            //    do
+            //    {
+            //        Console.Write("enter the password : ");
+            //    }
+            //    while (!int.TryParse(Console.ReadLine(), out pass[i]) );
+            //    Console.Write("enter the role : ");
+            //    role[i] = Console.ReadLine();
+            //}
+
+
+            //IAuthenticationService authenticationService = new BasicAuthenticationService(pass,name,role);
+
+            //Console.WriteLine(authenticationService.AuthenticateUser("madonna", 9876)) ;
+            //Console.WriteLine(authenticationService.AuthorizeUser("madonna","admin"));
+            #endregion
+            #region Q03
+            //INotificationService emailService = new EmailNotificationService();
+            //emailService.SendNotification("john@example.com", "Hello, John!");
+
+            //INotificationService smsService = new SmsNotificationService();
+            //smsService.SendNotification("+123456789", "Hello, SMS!");
+
+            //INotificationService pushService = new PushNotificationService();
+            //pushService.SendNotification("Alice", "Hello, Alice!");
+            #endregion
             #endregion
         }
     }
