@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace OOP04.interfaces
 {
-    internal interface IUnderGrade
+    internal interface IUnderGrade 
     {
+      
         void GradeYear();
         void degree();
+       
     }
 }
